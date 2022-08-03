@@ -1,32 +1,26 @@
 {
-  "name": "food-festival",
+  "name": "module-19-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "assets/js/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shaunmichaelgreene/food-festival.git"
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shaunmichaelgreene/food-festival/issues"
-  },
-  "homepage": "https://github.com/shaunmichaelgreene/food-festival#readme",
   "devDependencies": {
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "@webpack-cli/serve": "^1.4.0",
+    "webpack": "^5.37.1",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.0",
-    "save": "^2.5.0"
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
   }
 }
