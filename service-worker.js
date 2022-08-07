@@ -44,3 +44,21 @@ self.addEventListener('activate', function (e) {
         })
     );
 });
+
+self.addEventListener('fetch', function (e) {
+    console.log('fetch request : ' + e.request.url)
+    e.respondWith(
+        caches.match(e.request).then(function (request) {
+            if (request) {
+                console.log('responsing with cache : ' + e.request.url)
+                return request
+            } else {
+                console.log('file is not cached, fetching : ' + e.request.url)
+                return fetch(e.request)
+            }
+
+            //you can omit if/else for console.log & put one line below like this too:
+            // return request || fetch(e.request)
+        })
+    )
+})
